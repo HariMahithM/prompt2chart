@@ -21,7 +21,7 @@ with st.expander("App Overview", expanded=False):
     )
 
 # API Key
-API_KEY = "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" 
+API_KEY = st.secrets["openai"]["api_key"]
 
 # Upload data
 df = get_data()
