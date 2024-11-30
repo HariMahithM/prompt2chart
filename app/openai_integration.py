@@ -8,8 +8,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-def handle_openai_query(df, column_names, api_key):
-    openai.api_key = api_key
+def handle_openai_query(df, column_names, api_tok):
+    openai.api_key = api_tok
 
     query = st.text_area(
         "Enter your Prompt:",
@@ -57,8 +57,8 @@ def execute_openai_code(code, df):
         st.warning("No valid code generated.")
 
 
-def generate_insights(df, query, api_key):
-    openai.api_key = api_key
+def generate_insights(df, query, api_tok):
+    openai.api_key = api_tok
 
     # Provide context for generating insights
     insight_prompt = f"""
