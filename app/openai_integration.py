@@ -38,7 +38,7 @@ def handle_openai_query(df, column_names, api_tok):
 
                 # Generate insights based on the query and visualization
                 if code:
-                    generate_insights(df, query, api_key)
+                    generate_insights(df, query, api_tok)
 
 
 def extract_code_from_markdown(md_text):
