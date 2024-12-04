@@ -20,3 +20,8 @@ PROMPT:
 
 ## output
 we get all the 4 graphs in a single output
+
+## API used
+I had used OPENAI API
+The model i have used is "gpt-3.5 turbo"
+alt:"gpt-4.o"
